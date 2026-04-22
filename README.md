@@ -1,29 +1,54 @@
-# @pipeworx/mcp-nationalize
+# mcp-nationalize
 
-MCP server for nationality prediction from first names via the [Nationalize.io API](https://nationalize.io/). Free, no authentication required.
+Nationalize MCP — nationality prediction from first name (nationalize.io, free, no auth)
+
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 250+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `predict_nationality` | Predict the most likely nationalities for a given first name |
-| `batch_predict` | Predict nationalities for up to 10 names in one request |
 
-## Quickstart via Pipeworx Gateway
+## Quick Start
 
-```bash
-curl -X POST https://gateway.pipeworx.io/mcp \
-  -H "Content-Type: application/json" \
-  -d '{
-    "jsonrpc": "2.0",
-    "method": "tools/call",
-    "params": {
-      "name": "nationalize__predict_nationality",
-      "arguments": { "name": "Yuki" }
-    },
-    "id": 1
-  }'
+Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
+
+```json
+{
+  "mcpServers": {
+    "nationalize": {
+      "url": "https://gateway.pipeworx.io/nationalize/mcp"
+    }
+  }
+}
 ```
+
+Or connect to the full Pipeworx gateway for access to all 250+ data sources:
+
+```json
+{
+  "mcpServers": {
+    "pipeworx": {
+      "url": "https://gateway.pipeworx.io/mcp"
+    }
+  }
+}
+```
+
+## Using with ask_pipeworx
+
+Instead of calling tools directly, you can ask questions in plain English:
+
+```
+ask_pipeworx({ question: "your question about Nationalize data" })
+```
+
+The gateway picks the right tool and fills the arguments automatically.
+
+## More
+
+- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [pipeworx.io](https://pipeworx.io)
 
 ## License
 
