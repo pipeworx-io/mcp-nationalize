@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-nationalize",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Nationalize MCP — nationality prediction from first name (nationalize.io, free, no auth)",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-c8f31f3643922ef7de310e03daaf2db7a508508da8a04fbbb1cdf2ff560ba4b7",
-    "sourceCommit": "adb69d997f82a62e8e22b594488c7d04a227db35"
+    "sourceHash": "v1-47accd3f74522ab1bad1e8ef0f3d59a15a9ae6ec72307ab01bb0340721916d8f",
+    "sourceCommit": "6182c4cfebddb94950e060b5d2fca18f18ad1aca"
   }
 }
