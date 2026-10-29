@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/nationalize",
   "title": "Nationalize",
   "description": "Nationalize MCP — nationality prediction from first name (nationalize.io, free, no auth)",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/nationalize",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-nationalize",

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "predict_nationality",
+    "description": "Predict likely nationalities from a first name. Returns up to 5 country codes ranked by probability (0.0–1.0). Use when inferring someone's origin from their given name.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "First name to predict nationality for."
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  },
+  {
+    "name": "batch_predict",
+    "description": "Predict nationalities for multiple first names at once (up to 10). Returns country codes with probability scores for each name. Use to process name lists efficiently.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "names": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Array of first names to predict nationality for (maximum 10).",
+          "maxItems": 10
+        }
+      },
+      "required": [
+        "names"
+      ]
+    }
+  }
+]
