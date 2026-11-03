@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-nationalize",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Nationalize MCP — nationality prediction from first name (nationalize.io, free, no auth)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "nationalize",
     "gatewaySlug": "nationalize",
-    "sourceHash": "v1-a24cbb2430498f106558caddbaf0bd293f7bc134a3aeb5aa94dafe8af470c552",
-    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
+    "sourceHash": "v1-6e6f0794d4d852083bbff0fa19ad400355661f0efd99267c5d888ebe1eeb6bda",
+    "sourceCommit": "56cf550e46fed96c0101a3877ccaf8357eecf016"
   }
 }
